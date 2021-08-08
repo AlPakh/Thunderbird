@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/clay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cVoid"
+    tools:context=".Main">
+
+    <ImageView
+        android:id="@+id/imgShip"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="-1000dp"
+        android:layout_marginTop="-1000dp"
+        android:contentDescription="@string/contentDescription"
+        android:tag="imgShip"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ship_clse" />
+
+    <LinearLayout
+        android:id="@+id/layMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/lblMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="70dp"
+            android:fontFamily="@font/press_start_2p"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@android:color/background_light"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layCount"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="100dp"
+            android:contentDescription="@string/contentDescription"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/img_three" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layPause"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="100dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnResume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cTransparent"
+                android:fontFamily="@font/press_start_2p"
+                android:text="@string/txt_resume"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp" />
+
+
+            <Button
+                android:id="@+id/btnSound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cTransparent"
+                android:drawingCacheQuality="auto"
+                android:fontFamily="@font/press_start_2p"
+                android:text="@string/txt_sound"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp" />
+
+
+            <Button
+                android:id="@+id/btnMusic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cTransparent"
+                android:fontFamily="@font/press_start_2p"
+                android:text="@string/txt_music"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btnExit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cTransparent"
+                android:fontFamily="@font/press_start_2p"
+                android:text="@string/txt_exit"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:contentDescription="@string/contentDescription"
+        android:fontFamily="@font/press_start_2p"
+        android:paddingStart="2dp"
+        android:paddingTop="6dp"
+        android:tag="txtScore"
+        android:text="@string/txt_score"
+        android:textColor="@android:color/background_light"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
