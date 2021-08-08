@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cVoid"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Menu">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/imgStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginEnd="100dp"
+            android:fontFamily="@font/press_start_2p"
+            android:gravity="center"
+            android:text="START"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/imgHelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="100dp"
+            android:fontFamily="@font/press_start_2p"
+            android:gravity="center"
+            android:text="HELP"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/imgExit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="100dp"
+            android:fontFamily="@font/press_start_2p"
+            android:gravity="center"
+            android:text="EXIT"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgSound"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@drawable/sound_on" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgMusic"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@drawable/music_on" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Thunderbird</string>
+    <string name="contentDescription">blah-blah-blah</string>
+    <string name="txt_score">Score: 0</string>
+    <string name="txt_resume">RESUME</string>
+    <string name="txt_sound">SOUND</string>
+    <string name="txt_music">MUSIC</string>
+    <string name="txt_exit">EXIT</string>
+
+    <string name="txt_content">MUSIC:\nRetro Platforming - David Feslyan\n\nSFX:\nSound Collection by Juhani Junkala\n\nART:\nal_pakh_a</string>
+
+    <string name="infAst">Reward: 500\n\nDescription: Small, separated asteroids</string>
+    <string name="infClust">Reward: 500\n\nDescription: Large, frequent asteroids that look more solid than the smaller ones</string>
+    <string name="infRam">Reward: 1000\n\nDescription: Invulnerable enemy ships which go after player. Once a ram misses you it gets destroyed</string>
+    <string name="infObst">Reward: -\n\nDescription: This wave includes enemies from previous three waves</string>
+    <string name="infSpam">Reward: 5000\n\nDescription: Enemy ship that takes height and starts firing while moving left and right. After fifteen shots becomes vulnerable and changes color to white for a short period of time</string>
+
+    <string name="infDouble">Reward: 500\n\nPlayer starts shooting two projectiles at a time</string>
+    <string name="infSpeedUp">Reward: 100\n\nDecreases player\'s shooting period by 100ms</string>
+    <string name="infHealth">Reward: 200\n\nIncreases player\'s health by 1</string>
+</resources>
